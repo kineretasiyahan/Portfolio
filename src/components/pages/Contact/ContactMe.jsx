@@ -1,26 +1,12 @@
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+import Input from "../../featurs/Input/Input"
 export default function ContactMe() {
-    return (<div className="main">
+    return (<div className="mainContact">
+        <h1 className="headerContact">CONTACT US</h1>
+        <h1 className="headerContact">DONT BE SHY!</h1>
+        <h2>Feel free to get in touch with me.</h2>
         <form className="form" action="mailto:kineret9688@gmail.com" method="post" enctype="text/plain" noValidate autoComplete="on">
-            <TextField id="standard-basic" label="Full Name" variant="filled" />
-            <br></br>
-            <br></br>
-            <TextField id="filled-basic" label="Age" variant="filled" />
-            <br></br>
-            <br></br>
-            <TextField id="outlined-basic" label="Email" variant="filled" />
-            <br></br>
-            <br></br>
-            <TextField id="outlined-basic" label="Message" variant="filled" />
-            <br></br>
-            <br></br>
-            <Button type="submit" variant="contained">
-               submit
-            </Button>
-            {/* <button type="submit">send</button> */}
+            <Input/>
         </form>
-
     </div>)
 
 }

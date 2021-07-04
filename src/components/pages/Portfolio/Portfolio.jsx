@@ -1,68 +1,30 @@
 import styled from "styled-components";
 import { useContextGlobal } from '../../Context';
-import Carousel from 'react-bootstrap/Carousel'
 export default function Portfolio() {
   const protofolioArray =useContextGlobal();
-
   const Img = styled.img`
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   `
   return (
     <div>
+      <h1>PORTFOLIO</h1>
+   <div className="projectCard">
+   {protofolioArray.map((cards) => { 
+ return(
+ <div className="cardP" key={cards.id}>
+     <h1>{cards.name}</h1>
+     <img className="imgProject" src={cards.img}></img>
+     <br></br>
+     <br></br>
+     <a href={cards.url}> <i class="fab fa-github" style={{width:"30px",height:"30px"}}></i></a>
+     <a href={cards.web}><img src="web.jpg" alt="url" style={{width:"30px",height:"30px"}}></img></a>
+   </div>)
+   })}
+   </div>
+   </div>
+  ) }
 
-<Carousel style={{width:"fit-content" , height:"fit-content"}}>
-<Carousel.Item>
-  <Img
-    className="d-block w-100"
-    src="movies project.jpeg"
-    alt="First slide"
-  />
-  <Carousel.Caption>
-    <h3>First slide label</h3>
-    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-  </Carousel.Caption>
-</Carousel.Item>
-<Carousel.Item>
-  <Img
-    className="d-block w-100"
-    src="news project.jpeg"
-    alt="Second slide"
-  />
-
-  <Carousel.Caption>
-    <h3>Second slide label</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-  </Carousel.Caption>
-</Carousel.Item>
-<Carousel.Item>
-  <Img
-    className="d-block w-100"
-    src="cars project.jpeg"
-    alt="Third slide"
-  />
-
-  <Carousel.Caption>
-    <h3>Third slide label</h3>
-    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-  </Carousel.Caption>
-</Carousel.Item>
-</Carousel> 
-
-    </div>
-
-
-  //   <div className="projectCard">
-  //  {protofolioArray.map((cards) => {
-  //     return(
-  //     <div className="cardP" key={cards.id}>
-  //       <h1>{cards.name}</h1>
-  //       <img className="imgProject" src={cards.img}></img>
-  //     </div>)
-  //     })}
-  //     </div>)
-   
-  )}
 
 
 

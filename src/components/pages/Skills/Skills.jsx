@@ -1,85 +1,100 @@
-import styled from "styled-components"
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Timeline from '@material-ui/lab/Timeline';
+import TimelineItem from '@material-ui/lab/TimelineItem';
+import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
+import TimelineConnector from '@material-ui/lab/TimelineConnector';
+import TimelineContent from '@material-ui/lab/TimelineContent';
+import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
+import TimelineDot from '@material-ui/lab/TimelineDot';
+
+import LaptopMacIcon from '@material-ui/icons/LaptopMac';
+import Typography from '@material-ui/core/Typography';
+
+const useStyles = makeStyles((theme) => ({
+
+  secondaryTail: {
+    backgroundColor: theme.palette.secondary.main,
+  },
+}));
 export default function Skills() {
-    const Istyle = styled.i`
-    width:400px;
-    height:400px;`
-    return (<div className="mainSkiils">
-        <h1>skills</h1>
-        <h1>front end</h1>
-        <p>HTML</p>
-<div className="container">
-  <div className="skills html">100%</div>
-</div>
+  const classes = useStyles();
+  return (
+    <div style={{ background:"url('skills4.jpeg')" ,opacity:"0.8"}}>
+    <Timeline position="alternate" className="skillMainDiv" >
+      <TimelineItem className="skillDiv">
 
-<p>CSS</p>
-<div className="container">
-  <div className="skills css">80%</div>
-</div>
+        <TimelineOppositeContent
 
-<p>Java Script</p>
-<div className="container">
-  <div className="skills js">60%</div>
-</div>
+          sx={{ m: 'auto 0' }}
+          align="right"
+          variant="body2"
+          color="text.secondary"
+        >
+          <Typography className="skillHeader" variant="h3" component="span" >
+            CLIENT SIDE
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" >
+            <LaptopMacIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+          <img class="frontEndImg" src="html.png" alt="skills"></img>
+          <img class="frontEndImg" src="css.png" alt="skills"></img>
+          <img class="frontEndImg" src="js.png" alt="skills"></img>
+          <img class="frontEndImg" src="react.jpg" alt="skills"></img>
+          <img class="frontEndImg" src="Typescript_logo_.svg" alt="skills"></img>
+        </TimelineContent>
+      </TimelineItem >
 
-<p>react</p>
-<div className="container">
-  <div className="skills php">50%</div>
-</div>
-
-
-{/* 
-        <p>Front End</p>
-        <div> <i className="fa fa-html5"></i>
-            <i className="icon" class="fa fa-css3" ></i>
-            <i className="icon" class='fab fa-react'></i>
-        </div>
-        
-            <p>Back end</p>
-            <div> <i className="fa fa-html5"></i>
-                <i className="icon" class="fa fa-css3" ></i>
-                <i className="icon" class='fab fa-react'></i>
-            </div>
-            <ul>
-            <li> <img src=""></img>
-                <p>Children</p>
-            </li>
-
-        </ul> */}
-        {/* <h1>SKILLS</h1>
-        <div className="cardSkills">
-            
-            <h1> Front End </h1>
-            {/* <Istyle>
-            <i  className="fa fa-html5"></i>
-            <i className="icon" class="fa fa-css3" ></i>
-            <i className="icon" class='fab fa-react'></i>
-            // </Istyle> */}
-
-        {/* </div>
-        <div className="cardSkills">
-            <h1> Back End </h1>
-        </div>
-        <div className="cardSkills">
-            <h1> General </h1>
-        </div> */ }
-
-
-    </div>)
-
+      <TimelineItem className="skillDiv">
+        <TimelineOppositeContent
+          sx={{ m: 'auto 0' }}
+          variant="body2"
+          color="text.secondary"
+        >
+          <Typography className="skillHeader" variant="h3" component="span" >
+          SERVER SIDE
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot >
+            <LaptopMacIcon />
+          </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+        <img class="backEndImg" src="c.png" alt="skills"></img>
+        <img class="backEndImg" src="mvc.jpg" alt="skills"></img>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem className="skillDiv">
+      <Typography className="skillHeader" variant="h3" component="span">
+        ENVIRO
+        NMENT
+          </Typography>
+        <TimelineSeparator>
+          <TimelineConnector />
+          <TimelineDot color="primary" >
+            <LaptopMacIcon />
+          </TimelineDot>
+          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: '12px', px: 2 }}>
+        <img class="backEndImg" src="vs code.jpg" alt="skills"></img>
+        <img class="backEndImg" src="vs code2.png" alt="skills"></img>
+          <Typography></Typography>
+        </TimelineContent>
+      </TimelineItem>
+    </Timeline>
+    </div>
+  );
 }
-{/* <div className="main">
-<p className="pHome">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam deleniti est aut perspiciatis. Perferendis, itaque tempora minus vero eligendi ut officiis qui quos blanditiis inventore. Quibusdam magni officia vero rem error perferendis ipsam, ad repellendus et eos hic assumenda excepturi mollitia iusto quo ratione vel sed quos! Saepe placeat, excepturi cumque atque provident ratione eligendi voluptatem ipsa nihil minima nemo accusantium laborum officia pariatur consequatur magnam dolorum incidunt illum optio rem, veritatis sint adipisci quo dicta. Beatae quaerat autem eligendi maxime id tenetur dolorum. Vitae natus nesciunt voluptates. Cupiditate reprehenderit explicabo facere eveniet fugiat in saepe velit ipsa quidem esse?</p>
-<div className="cards" >
-    <img src="כנרת הרצאה 2.jpeg" className="card-img-top" alt="me in class"></img>
-    <div className="card-body">
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <div className="cards" >
-        <img src="כנרת הרצאה.jpeg" className="card-img-top" alt="me in class"></img>
-        <div className="card-body">
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    </div>
-    </div>
 
-</div> */}
+
+
