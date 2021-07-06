@@ -5,9 +5,8 @@ import Skills from '../pages/Skills/Skills';
 import Portfolio from '../pages/Portfolio/Portfolio';
 import Header from '../featurs/Header/Header'
 import Footer from '../featurs/Footer/Footer';
-import Layout from '../../Layout'
 import SideBar from '../../components/featurs/SideBar/SideBar';
-import { ThemeContextProvider, theme } from '../Context';
+import { ThemeContextProvider} from '../Context';
 import { useState } from 'react';
 export default function AppRouter() {
     const [theme, setTheme] = useState();
@@ -17,7 +16,7 @@ export default function AppRouter() {
         }
         else setTheme("dark");
     }
-    return (<ThemeContextProvider value={{ theme, changeColor }} >
+    return (<ThemeContextProvider value={{theme, changeColor }} >
         <div style={{ backgroundColor: theme === "dark" ? "black" : "white" }} >
             <div>
                 <Header />

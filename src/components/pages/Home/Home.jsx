@@ -9,9 +9,6 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import styled from 'styled-components';
-
-
 const useStyles = makeStyles(() => ({
   media: {
     width: 420,
@@ -31,16 +28,17 @@ export default function Home() {
   const [data, setData] = useState();
   function aboutMe() {
     if(data==""){
-    setData("Experienced in development, On the server and client side, "+ 
-    "with a passion and desire to learn more about the world of software development. "
-    )}
+    setData(<h5>Hey my name is Kineret Asiyahan, I'm 25 years old I live in Kiryat-Ekron,Israel
+      <br></br>
+    I'm studing full stack deloveper in tec-career.</h5>   )} 
+    
     else {
 setData("")
     }
   } 
   return (
-    <div> <button onClick={aboutMe} type="button" name="x" className="aboutMe" style={{backgroundColor:getTheme=="dark"?"black":"white",color:getTheme=="dark"?"white":"black"}}>KINERET ASIYAHAN - FULL STACK DEVELOPR</button>
-      <p style={{color:getTheme=="dark"?"white":"black"}} className="pHome">{data} </p>
+    <div> <button onClick={aboutMe} type="button" name="x" className="aboutMe" style={{backgroundColor:getTheme=="dark"?"black":"white",color:getTheme=="dark"?"white":"black"}}>KINERET ASIYAHAN - FULL STACK DEVELOPER 👇 </button>
+      <p  className="pHome">{data} </p>
       <Grid container spacing={2} justify="center" >
         {cardsArray.map((item) => (
           <Grid item >
@@ -49,9 +47,8 @@ setData("")
                 <CardMedia
                   className={classes.media}
                   image={`${item.img}`}
-                  title={item.header}
-                />
-                <CardContent style={{backgroundColor:getTheme=="dark"?"black":"white"}}>
+                  title={item.header}   />
+                  <CardContent style={{backgroundColor:getTheme=="dark"?"black":"white"}}>
                   <Typography gutterBottom variant="h5" component="h2" style={{color:getTheme=="dark"?"white":"black"}}>
                     {item.header }
                   </Typography>
