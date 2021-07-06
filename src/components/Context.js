@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
 //Portfolio Component
-const projectArray = [{ name: "Escape Room", img: "escae project.jpeg", url: "https://github.com/kineretasiyahan/escape-room-project.git", web: "https://kineretasiyahan.github.io/escape-room-project/", id: 1 },
+const projectArray = [{ name: "Escape Room", img: "escae project.jpeg" , url: "https://github.com/kineretasiyahan/escape-room-project.git", web: "https://kineretasiyahan.github.io/escape-room-project/", id: 1 },
 { name: "Cars", img: "cars project.jpeg", url: "https://github.com/kineretasiyahan/Cars-Project.git", web: "https://kineretasiyahan.github.io/Cars-Project/", id: 2 },
 { name: "KNews", img: "news project.jpeg", url: "https://github.com/kineretasiyahan/NEWSPROJECT.git", web: "https://kineretasiyahan.github.io/NEWSPROJECT/", id: 3 },
 { name: "Movies", img: "movies project.jpeg", url: "https://github.com/kineretasiyahan/Cinema-Movie.git", web: "https://kineretasiyahan.github.io/Cinema-Movie/", id: 4 }]
