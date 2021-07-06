@@ -22,7 +22,7 @@ export default function Skills() {
   const classes = useStyles();
   return (
     <div >
-      {/* <h1>MY SKILLS</h1> */}
+      <h1>MY SKILLS</h1>
       <VerticalTimeline >
   <VerticalTimelineElement  
     className="vertical-timeline-element--work"
