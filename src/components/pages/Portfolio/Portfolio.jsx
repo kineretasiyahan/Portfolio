@@ -18,7 +18,7 @@ export default function Portfolio() {
      <br></br>
      <br></br>
      <a href={cards.url}> <i class="fab fa-github" style={{width:"30px",height:"30px"}}></i></a>
-     <a href={cards.web}><img src="web.jpg" alt="url" style={{width:"30px",height:"30px"}}></img></a>
+     <a href={cards.web}><img src="/Portfolio/web.jpg" alt="url" style={{width:"30px",height:"30px"}}></img></a>
    </div>)
    })}
    </div>

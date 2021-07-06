@@ -5,7 +5,7 @@ export default function Links() {
     const themeButton=useContextTheme()
     return (
             <div className="sidebar" >
-                <img className="imgKin" src="Portfolio/kineret img header.jpeg" alt="me"></img>
+                <img className="imgKin" src="/Portfolio/kineret img header.jpeg" alt="me"></img>
                 <Link to='/'>HOME <i class="fa fa-home"></i></Link>
                 <Link to='/Skills'>SKILLS <i class="fas fa-graduation-cap"></i></Link>
                 <Link to='/Portfolio'>PORTFOLIO <i class='fas fa-suitcase'></i></Link>
