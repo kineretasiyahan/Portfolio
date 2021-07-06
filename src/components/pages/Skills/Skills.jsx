@@ -32,11 +32,11 @@ export default function Skills() {
     <h3>
       HTML,CSS,JS,REACT,TS
     </h3>
-    <img class="frontEndImg" src="html.png" alt="skills"></img>
-    <img class="frontEndImg" src="css.png" alt="skills"></img>
-    <img class="frontEndImg" src="js.png" alt="skills"></img>
-    <img class="frontEndImg" src="react.jpg" alt="skills"></img>
-    <img class="frontEndImg" src="Typescript_logo_.svg" alt="skills"></img>
+    <img class="frontEndImg" src="Portfolio/html.png" alt="skills"></img>
+    <img class="frontEndImg" src="Portfolio/css.png" alt="skills"></img>
+    <img class="frontEndImg" src="Portfolio/js.png" alt="skills"></img>
+    <img class="frontEndImg" src="Portfolio/react.jpg" alt="skills"></img>
+    <img class="frontEndImg" src="Portfolio/Typescript_logo_.svg" alt="skills"></img>
   </VerticalTimelineElement>
   <VerticalTimelineElement
 
@@ -52,9 +52,9 @@ iconStyle={{ display:"none" }}
     <h3>
       C#,MVC,NODE.JS
     </h3>
-     <img class="backEndImg" src="c.png" alt="skills"></img>
-     <img class="backEndImg" src="mvc.jpg" alt="skills"></img>
-     <img class="backEndImg" src="dotnet.png" alt="skills"></img>
+     <img class="backEndImg" src="Portfolio/c.png" alt="skills"></img>
+     <img class="backEndImg" src="Portfolio/mvc.jpg" alt="skills"></img>
+     <img class="backEndImg" src="Portfolio/dotnet.png" alt="skills"></img>
   </VerticalTimelineElement>
   <VerticalTimelineElement
 
@@ -71,98 +71,13 @@ iconStyle={{ display:"none" }}
     <h3>
     VISUAL STUDIO CODE, VISUAL CODE
     </h3>
-     <img class="backEndImg" src="vs code.jpg" alt="skills"></img>
-  <img class="backEndImg" src="vs code2.png" alt="skills"></img>
+     <img class="backEndImg" src="Portfolio/vs code.jpg" alt="skills"></img>
+  <img class="backEndImg" src="Portfolio/vs code2.png" alt="skills"></img>
   </VerticalTimelineElement>
 </VerticalTimeline>
 
     </div>
   );
 }
-
-
-// <Timeline position="alternate" className="skillMainDiv" >
-// <TimelineItem className="skillDiv">
-
-//   <TimelineOppositeContent
-
-//     sx={{ m: 'auto 0' }}
-//     align="right"
-//     variant="body2"
-//     color="text.secondary"
-//     backgroundColor="black"
-//   >
-//     <Typography className="skillHeader" variant="h3" component="span" >
-//       CLIENT SIDE
-//     </Typography>
-//     <br></br>
-//     <br></br>
-//     <img src="https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style={{ width: "150px", height: "150px" }}></img>
-//   </TimelineOppositeContent>
-//   <TimelineSeparator>
-//     <TimelineConnector />
-//     <TimelineDot color="primary" >
-//       <LaptopMacIcon />
-//     </TimelineDot>
-//     <TimelineConnector />
-//   </TimelineSeparator>
-//   <TimelineContent sx={{ py: '12px', px: 2 }}>
-//     <img class="frontEndImg" src="html.png" alt="skills"></img>
-//     <img class="frontEndImg" src="css.png" alt="skills"></img>
-//     <img class="frontEndImg" src="js.png" alt="skills"></img>
-//     <img class="frontEndImg" src="react.jpg" alt="skills"></img>
-//     <img class="frontEndImg" src="Typescript_logo_.svg" alt="skills"></img>
-//   </TimelineContent>
-// </TimelineItem >
-
-// <TimelineItem className="skillDiv">
-//   <TimelineOppositeContent
-//     sx={{ m: 'auto 0' }}
-//     variant="body2"
-//     color="text.secondary"
-//   >
-//     <Typography className="skillHeader" variant="h3" component="span" >
-//       SERVER SIDE
-//     </Typography>
-//     <br></br>
-//     <br></br>
-//     <img src="https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style={{ width: "150px", height: "150px" }}></img>
-//   </TimelineOppositeContent>
-//   <TimelineSeparator>
-//     <TimelineConnector />
-//     <TimelineDot >
-//       <LaptopMacIcon />
-//     </TimelineDot>
-//     <TimelineConnector />
-//   </TimelineSeparator>
-//   <TimelineContent sx={{ py: '12px', px: 2 }}>
-//     <img class="backEndImg" src="c.png" alt="skills"></img>
-//     <img class="backEndImg" src="mvc.jpg" alt="skills"></img>
-//     <img class="backEndImg" src="dotnet.png" alt="skills"></img>
-//   </TimelineContent>
-// </TimelineItem>
-// <TimelineItem className="skillDiv">
-//   <Typography className="skillHeader" variant="h3" component="span">
-//     ENVIRO
-//     NMENT
-//     <br></br>
-//     <br></br>
-//   <img src="https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style={{ width: "150px", height: "150px" }}></img>
-//   </Typography>
-//   <TimelineSeparator>
-//     <TimelineConnector />
-//     <TimelineDot color="primary" >
-//       <LaptopMacIcon />
-//     </TimelineDot>
-//     <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-//   </TimelineSeparator>
-//   <TimelineContent sx={{ py: '12px', px: 2 }}>
-//     <img class="backEndImg" src="vs code.jpg" alt="skills"></img>
-//     <img class="backEndImg" src="vs code2.png" alt="skills"></img>
-//     <Typography></Typography>
-//   </TimelineContent>
-// </TimelineItem>
-// </Timeline>
-
 
 
