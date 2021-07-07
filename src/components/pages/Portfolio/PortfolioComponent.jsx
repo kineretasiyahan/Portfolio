@@ -1,11 +1,6 @@
-import styled from "styled-components";
 import { useContextGlobal } from '../../Context';
 export default function Portfolio() {
   const protofolioArray =useContextGlobal();
-  const Img = styled.img`
-  width: 400px;
-  height: 400px;
-  `
   return (
     <div>
       <h1>PORTFOLIO</h1>

@@ -2,7 +2,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from '../pages/Home/Home';
 import ContactMe from '../pages/Contact/ContactMe';
 import Skills from '../pages/Skills/Skills';
-import Portfolio from '../pages/Portfolio/Portfolio';
+import Portfolio from '../pages/Portfolio/PortfolioComponent';
 import Header from '../featurs/Header/Header'
 import Footer from '../featurs/Footer/Footer';
 import SideBar from '../../components/featurs/SideBar/SideBar';
