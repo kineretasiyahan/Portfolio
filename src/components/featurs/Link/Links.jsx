@@ -8,7 +8,7 @@ export default function Links() {
                 <img className="imgKin" src="/Portfolio/kineret img header.jpeg" alt="me"></img>
                 <Link to='/'>HOME <i class="fa fa-home"></i></Link>
                 <Link to='/Skills'>SKILLS <i class="fas fa-graduation-cap"></i></Link>
-                <Link to='/Portfolio'>PORTFOLIO <i class='fas fa-suitcase'></i></Link>
+                <Link to='/PortfolioComponent'>PORTFOLIO <i class='fas fa-suitcase'></i></Link>
                 <Link to='/ContactMe'>CONTACT <i class="fas fa-address-card"></i></Link>
                 <Button type="submit" variant="contained" onClick={themeButton.changeColor} >
                     {themeButton.theme} MOOD

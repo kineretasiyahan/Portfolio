@@ -1,5 +1,5 @@
 import { useContextGlobal } from '../../Context';
-export default function Portfolio() {
+export default function PortfolioComponent() {
   const protofolioArray =useContextGlobal();
   return (
     <div>
