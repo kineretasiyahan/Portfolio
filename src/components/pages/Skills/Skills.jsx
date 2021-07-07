@@ -22,11 +22,11 @@ export default function Skills() {
     <h3>
       HTML,CSS,JS,REACT,TS
     </h3>
-    <img class="frontEndImg" src="Portfolio/html.png" alt="skills"></img>
-    <img class="frontEndImg" src="Portfolio/css.png" alt="skills"></img>
-    <img class="frontEndImg" src="Portfolio/js.png" alt="skills"></img>
-    <img class="frontEndImg" src="Portfolio/react.jpg" alt="skills"></img>
-    <img class="frontEndImg" src="Portfolio/Typescript_logo_.svg" alt="skills"></img>
+    <img class="frontEndImg" src="/Portfolio/html.png" alt="skills"></img>
+    <img class="frontEndImg" src="/Portfolio/css.png" alt="skills"></img>
+    <img class="frontEndImg" src="/Portfolio/js.png" alt="skills"></img>
+    <img class="frontEndImg" src="/Portfolio/react.jpg" alt="skills"></img>
+    <img class="frontEndImg" src="/Portfolio/Typescript_logo_.svg" alt="skills"></img>
   </VerticalTimelineElement>
   <VerticalTimelineElement
 
@@ -42,9 +42,9 @@ iconStyle={{ display:"none" }}
     <h3>
       C#,MVC,NODE.JS
     </h3>
-     <img class="backEndImg" src="Portfolio/c.png" alt="skills"></img>
-     <img class="backEndImg" src="Portfolio/mvc.jpg" alt="skills"></img>
-     <img class="backEndImg" src="Portfolio/dotnet.png" alt="skills"></img>
+     <img class="backEndImg" src="/Portfolio/c.png" alt="skills"></img>
+     <img class="backEndImg" src="/Portfolio/mvc.jpg" alt="skills"></img>
+     <img class="backEndImg" src="/Portfolio/dotnet.png" alt="skills"></img>
   </VerticalTimelineElement>
   <VerticalTimelineElement
 
@@ -61,8 +61,8 @@ iconStyle={{ display:"none" }}
     <h3>
     VISUAL STUDIO CODE, VISUAL CODE
     </h3>
-     <img class="backEndImg" src="Portfolio/vs code.jpg" alt="skills"></img>
-  <img class="backEndImg" src="Portfolio/vs code2.png" alt="skills"></img>
+     <img class="backEndImg" src="/Portfolio/vs code.jpg" alt="skills"></img>
+  <img class="backEndImg" src="/Portfolio/vs code2.png" alt="skills"></img>
   </VerticalTimelineElement>
 </VerticalTimeline>
 
