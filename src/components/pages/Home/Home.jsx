@@ -11,7 +11,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 const useStyles = makeStyles(() => ({
   media: {
-    width: 420,
+    width: 500,
     height: 360,
   },
   img: {

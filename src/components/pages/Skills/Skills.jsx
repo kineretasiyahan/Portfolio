@@ -29,7 +29,6 @@ export default function Skills() {
     <img class="frontEndImg" src="/Portfolio/Typescript_logo_.svg" alt="skills"></img>
   </VerticalTimelineElement>
   <VerticalTimelineElement
-
 iconStyle={{ display:"none" }}
   >
   </VerticalTimelineElement>
